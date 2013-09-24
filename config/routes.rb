@@ -53,4 +53,12 @@ Ev1::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+
+  root to: 'pages#index'
+  get '/signin', to: 'pages#signin'
+  get '/signup', to: 'pages#signup'
+  get '/main-page', to: 'pages#main_page'
+  get '/add-product', to: 'pages#add_product'
+  get '/marketing-narrow', to: 'pages#marketing_narrow'
 end
